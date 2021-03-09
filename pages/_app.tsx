@@ -1,5 +1,5 @@
-import { RecoilRoot } from 'recoil'
-import '@styles/global.scss'
+import { RecoilRoot } from 'recoil';
+import '@styles/global.scss';
 
 function App({ Component, pageProps }) {
   return (
@@ -9,4 +9,4 @@ function App({ Component, pageProps }) {
   );
 }
 
-export default App
+export default App;
