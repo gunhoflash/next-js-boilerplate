@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRecoilState } from 'recoil';
-import { nameState } from '../components/states';
+import { nameState } from '@components/states';
 
 export default function Home() {
   const [name, setNameState] = useRecoilState(nameState);
