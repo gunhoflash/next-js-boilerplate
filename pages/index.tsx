@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -48,6 +49,8 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <p>or</p>
+        <Link href="/profile">Set your profile</Link>
       </main>
 
       <footer className={styles.footer}>
