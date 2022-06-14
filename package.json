@@ -1,15 +1,36 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "boilerplate",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npm run watch:tailwind",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf .next node_modules",
+    "watch:tailwind": "npx tailwindcss -i ./styles/global.scss -o ./styles/dist/global.css --watch"
   },
   "dependencies": {
-    "next": "10.0.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "lodash.uniqueid": "^4.0.1",
+    "next": "^12.0.8",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "@types/react": "^18.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "tailwindcss": "^3.1.2",
+    "typescript": "^4.7.3"
   }
 }
